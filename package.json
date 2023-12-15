@@ -1,0 +1,38 @@
+{
+  "name": "ts",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "oxlint",
+    "type-check": "tsc --noEmit",
+    "fmt": "prettier --write . --cache",
+    "fmt:check": "prettier --check . --cache",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "type-testing": "^0.2.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "bun-types": "latest",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "oxlint": "latest",
+    "prettier": "^3.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "oxlint --fix .",
+      "prettier . --cache"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  }
+}
