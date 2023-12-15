@@ -15,6 +15,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "bun-types": "latest",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
@@ -33,6 +34,27 @@
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
+    ]
+  },
+  "prettier": {
+    "endOfLine": "lf",
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "plugins": [
+      "@ianvs/prettier-plugin-sort-imports"
+    ],
+    "importOrder": [
+      "<THIRD_PARTY_MODULES>",
+      "",
+      "^types$",
+      "^@/utils/(.*)$",
+      "^[./]"
+    ],
+    "importOrderParserPlugins": [
+      "typescript",
+      "decorators-legacy"
     ]
   }
 }
