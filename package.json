@@ -18,9 +18,9 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "bun-types": "latest",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.5",
+    "lint-staged": "^15.2.7",
     "oxlint": "latest",
-    "prettier": "^3.3.1"
+    "prettier": "^3.3.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
