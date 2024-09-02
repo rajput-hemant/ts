@@ -13,12 +13,12 @@
     "type-testing": "^0.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.4.0",
-    "@commitlint/config-conventional": "^19.2.2",
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
     "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
     "bun-types": "latest",
     "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
+    "lint-staged": "^15.2.10",
     "oxlint": "latest",
     "prettier": "^3.3.3"
   },
