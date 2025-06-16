@@ -18,7 +18,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.2",
     "bun-types": "latest",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.0",
+    "lint-staged": "^16.1.2",
     "oxlint": "latest",
     "prettier": "^3.5.3"
   },
