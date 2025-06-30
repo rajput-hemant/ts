@@ -20,7 +20,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "oxlint": "latest",
-    "prettier": "^3.5.3"
+    "prettier": "^3.6.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
